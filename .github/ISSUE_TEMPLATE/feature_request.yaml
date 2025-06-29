@@ -1,0 +1,27 @@
+name: 🚀 Feature Request
+description: 새로운 기능을 제안하거나 개선 아이디어를 공유해주세요.
+title: "[FEATURE] "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: what-feature
+    attributes:
+      label: 어떤 기능을 제안하시나요?
+      placeholder: 예) 사용자 프로필 편집 기능
+  - type: textarea
+    id: why-needed
+    attributes:
+      label: 왜 필요한가요?
+      description: 이 기능이 사용자에게 어떤 가치를 주는지 설명해주세요.
+  - type: textarea
+    id: how-it-could-work
+    attributes:
+      label: 어떻게 동작하길 기대하나요?
+      placeholder: 예) 프로필 이미지, 닉네임을 변경하고 저장할 수 있음
+  - type: checkboxes
+    id: options
+    attributes:
+      label: 참고사항
+      options:
+        - label: 이 기능이 기존 기능과 충돌하지 않음을 확인했습니다.
+        - label: UI/UX 영향을 고려했습니다.

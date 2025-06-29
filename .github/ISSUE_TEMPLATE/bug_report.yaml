@@ -1,0 +1,38 @@
+name: 🐞 Bug Report
+description: 애플리케이션에서 발견된 버그를 제보해주세요.
+title: "[BUG] "
+labels: [bug]
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: 어떤 문제가 발생했나요?
+      description: 발생한 문제를 자세히 설명해주세요.
+      placeholder: 예) 로그인 버튼을 눌렀을 때 500 에러가 발생함
+  - type: textarea
+    id: reproduce-steps
+    attributes:
+      label: 어떻게 재현하나요?
+      description: 문제를 재현할 수 있는 단계(step)를 작성해주세요.
+      placeholder: |
+        1. 로그인 페이지로 이동
+        2. 이메일 입력
+        3. 로그인 버튼 클릭
+        4. 500 에러 발생
+  - type: textarea
+    id: expected
+    attributes:
+      label: 기대했던 동작은 무엇인가요?
+      placeholder: 정상적으로 로그인 후 대시보드로 이동해야 합니다.
+  - type: input
+    id: environment
+    attributes:
+      label: 실행 환경
+      placeholder: 예) Chrome 124 / macOS 14.4
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: 확인 사항
+      options:
+        - label: 이슈가 중복되지 않았는지 검색했습니다.
+        - label: 최신 버전에서도 문제가 발생하는지 확인했습니다.
